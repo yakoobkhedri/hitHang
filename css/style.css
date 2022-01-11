@@ -1,0 +1,740 @@
+body {
+    direction: rtl;
+    font-family: Calibri;
+}
+::-webkit-scrollbar {
+    width: 2px;
+}
+::-webkit-scrollbar-thumb {
+    background: #C5CA95;
+}
+#mobileHeader #hambergerIcon {
+    width: 49px;
+    height: 49px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+#mobileHeader #mobileMenu {
+    right: -324px;
+    top: 0;
+    bottom: 0;
+    width: 290px;
+    background: #3f4905;
+    line-height: 40px;
+    z-index: 20;
+    transition: all .4s;
+}
+#mobileHeader #mobileMenu.open {
+    right: 0;
+}
+#mobileHeader #mobileMenu li, #mobileHeader #mobileMenu img {
+    cursor: pointer;
+}
+#deskHeader a, #deskHeader img {
+    cursor: pointer;
+    transition: all .4s;
+}
+#deskHeader img:hover {
+    filter: drop-shadow(-1px 3px 2px lightgray);
+}
+#deskHeader a {
+    display: inline-block;
+}
+#deskHeader ul {
+    line-height: 87px;
+}
+#deskHeader ul li,#deskHeader ul li a,#mobileHeader ul li,#mobileHeader ul li a {
+    transition: all .2s;
+    color: black;
+}
+#deskHeader ul li.active,#deskHeader ul li a.active,#mobileHeader ul li.active,#mobileHeader ul li a.active {
+    font-weight: bold;
+    color: #6F754E;
+}
+#deskHeader ul li:hover,#deskHeader ul li a:hover,#mobileHeader ul li:hover,#mobileHeader ul li a:hover {
+    color: #6F754E;
+    font-weight: bold;
+    text-decoration: none;
+}
+#orderTitle h1 {
+    font-size: 135px;
+    color: #8080802b;
+}
+#orderTitle h4 {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 227px;
+}
+#enterPhone input {
+    height: 80px;
+    border-radius: 20px;
+    border: 2px dashed black;
+}
+#contactForm {
+    background: -webkit-linear-gradient(top, #000000, #343434db);
+}
+#contactForm input, #contactForm textarea {
+    border-radius: 17px;
+    overflow: hidden;
+    background: #4b4b4b;
+    border: none;
+    padding-right: 9px;
+}
+#contactForm input::placeholder, #contactForm textarea::placeholder {
+    color: #6C757D;
+    font-weight: bold;
+    font-size: 14px;
+}
+#successMessage {
+    display: flex;
+}
+#successMessage img {
+    border-radius: 49%;
+    width: 20px;
+    height: 20px;
+}
+#successMessage p {
+    font-size: 10px;
+}
+#AddOrderForm .infoIcon {
+    background: #845D5E;
+    border-radius: 49%;
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+}
+#AddOrderForm input, .musicInput {
+    width: 90%;
+    height: 48px;
+}
+.musicInput img {
+    width: 28px;
+    height: 28px;
+    margin: 10px;
+    cursor: pointer;
+}
+#AddOrderForm textarea {
+    min-height: 110px;
+    width: 90%;
+}
+#AddOrderForm .zirNevis {
+    font-size: 12px;
+}
+#file {
+    position: absolute;
+    left: 41px;
+    top: 5px;
+    opacity: 0;
+    width: 68px !important;
+    cursor: pointer;
+}
+#file2 {
+    left: 36px;
+    top: 4px;
+    opacity: 0;
+    cursor: pointer;
+    width: 332px !important;
+}
+#file3 {
+    left: -3px;
+    top: -1px;
+    opacity: 0;
+    width: 258px !important;
+    cursor: pointer;
+}
+.diskImg {
+    width: 333px;
+}
+.diskImg p, .faceNumber p {
+    margin: 9px;
+}
+.faceNumber {
+    width: 333px;
+    cursor: pointer;
+}
+.frameColor {
+    width: 332px !important;
+    height: 47px !important;
+    left: 11px;
+    opacity: 0;
+    top: 26px;
+    cursor: pointer;
+}
+.frameColorMenu {
+    background: #C5CA95;
+    width: 100%;
+    z-index: 22;
+    left: 0;
+    top: 50px;
+    border-radius: 13px;
+    padding: 0;
+    line-height: 30px;
+    overflow-y: auto;
+    height: 0;
+    transition: all .4s;
+}
+.frameColorMenu.open {
+    padding: 16px;
+    height: 209px;
+}
+.frameColorMenu li{
+   width: 98%;
+    margin: auto;
+    border-radius: 9px;
+    transition: all .4s;
+    padding: 2px 7px;
+    color: black;
+}
+.frameColorMenu li:hover{
+   background: #1e7e34;
+    color: white;
+}
+.purchase {
+    font-size: 10rem !important;
+}
+.purchase2 {
+    right: 42%;
+    top: 80px !important;
+    font-size: 2rem !important;
+}
+.record {
+    background: red;
+    border-radius: 49%;
+    border: 12px solid lightgrey;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: -13px;
+    margin-right: 10px;
+    margin-left: 121px;
+    cursor: pointer;
+}
+.frame {
+    height: 70vh;
+    width: 320px;
+    border: 14px solid black;
+    background: gray;
+}
+.circle {
+    width: 190px;
+    height: 190px;
+    border-radius: 49%;
+    border: 49px solid lightgrey;
+    background: white;
+    margin: auto;
+    margin-top: 70px;
+}
+.arrowImg {
+    width: 20px;
+    height: 20px;
+    margin-top: 9px;
+    transition: all .4s;
+}
+.arrowImg.active {
+    transform: rotate(180deg);
+}
+.placeholder {
+    margin-top: 7px;
+}
+.color {
+    width: 28px;
+    height: 29px;
+    border-radius: 49%;
+    margin-top: 9px;
+}
+.cursor {
+    cursor: pointer;
+}
+.card-header {
+    background: white;
+}
+.btn-link {
+    font-weight: bold;
+    color: black;
+}
+.btn-link:hover {
+    text-decoration: none;
+    color: #879038;
+}
+.btn-link:focus {
+    text-decoration: none;
+}
+.card-body {
+    text-align: right;
+    background: lightgrey;
+}
+#whatIsHitFrame {
+    background: lightgrey;
+    padding: 20px;
+}
+#whatIsHitFrame a {
+    cursor: pointer;
+}
+.title h1 {
+    cursor: pointer;
+    color: lightgrey;
+    font-size: 55px;
+    text-align: center;
+}
+.title p {
+    right: 44%;
+    top: 24px;
+}
+#hitHangStory video {
+    margin-top: 68px !important;
+    border-radius: 29px;
+}
+.number {
+    font-size: 11em;
+    line-height: 137px;
+    color: lightgrey;
+}
+.acardeonMore {
+    border-radius: 29px;
+    cursor: pointer;
+}
+#socialBanner h1 {
+    font-size: 135px;
+    position: relative;
+    color: #8080802b;
+}
+#socialBanner h4 {
+    position: absolute;
+    top: 575px;
+    right: 43%;
+}
+.faq {
+    font-size: 10rem!important;
+}
+.faqPersian {
+    right: 44%!important;
+    top: 77px!important;
+    font-size: 2rem!important;
+}
+#socialVideo {
+    margin-top: -240px
+}
+#socialVideo video {
+    border-radius: 24px;
+    width: 310px;
+}
+#socialVideo .icons {
+    direction: ltr;
+    margin-top: 64px;
+}
+#socialVideo .icons a {
+    display: block;
+}
+#socialVideo .icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#socialVideo .circle2 {
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 49%;
+    position: absolute;
+    z-index: -1;
+    top: 127px;
+    right: 152px;
+}
+#socialVideo .circle22 {
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 49%;
+    position: absolute;
+    z-index: -1;
+    top: 127px;
+    width: 54px;
+    right: 192px
+}
+#socialVideo .square {
+    width: 20px;
+    height: 20px;
+    border: 8px solid black;
+    top: -51px;
+    left: -355px;
+}
+#socialVideo .wire {
+    width: 80px;
+    height: 2px;
+    top: -42px;
+    left: -336px;
+    background: black;
+    z-index: -1;
+}
+#team {
+    margin-left: 78px
+}
+#teamTitle h1 {
+    color: lightgrey;
+    font-size: 70px;
+    margin-right: -159px;
+}
+#teamTitle h4 {
+    right: 62px;
+    top: 27px;
+    font-weight: bold;
+}
+.persons {
+    width: 15%;
+}
+.persons .rounded2 {
+    border-radius: 14px;
+}
+.persons h4 {
+    font-size: 15px;
+}
+.persons p {
+    font-size: 11px;
+}
+.personsDiv {
+    width: 1040px;
+}
+.owl-carousel {
+    padding: 10px 0;
+    border: 1px solid #eee;
+    background: white;
+}
+.owl-carousel .card-img-top {
+    padding: 10px;
+}
+.owl-carousel h6 {
+    font-size: 12px;
+}
+.owl-carousel .owl-nav button {
+    position: absolute;
+    top: 50%;
+    font-size: 50px !important;
+    outline: none;
+    color: #777 !important;
+}
+.owl-carousel .owl-nav .owl-next {
+    left: -6px;
+}
+.owl-carousel .owl-nav button:hover {
+    color: black !important;
+}
+.owl-carousel.owl-rtl {
+    border: none;
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot, .owl-carousel .owl-nav button.owl-next {
+    border: 2px solid black;
+    padding: 0 !important;
+    font: inherit;
+    border-radius: 64px;
+    width: 70px;
+    height: 69px;
+    line-height: 6px;
+}
+.owl-carousel .owl-nav button.owl-prev span, .owl-carousel .owl-nav button.owl-next span {
+    font-size: 36px;
+    font-weight: bold;
+}
+.owl-carousel .owl-nav .owl-next {
+    left: -89px;
+}
+.owl-carousel .owl-nav .owl-prev {
+    right: -95px;
+}
+.zirCarousel {
+    background: -webkit-linear-gradient(top, transparent, #f6f6f6);
+    border-radius: 69%;
+    padding-bottom: 83px;
+    width: 97%;
+    margin: auto;
+    height: 897px;
+    z-index: -22;
+    margin-top: -732px;
+}
+.zirCarousel p {
+    line-height: 46px;
+}
+.zirCarousel img {
+    width: 44px;
+    height: 44px;
+}
+footer {
+    margin-top: 186px;
+}
+footer > div {
+    width: 32%;
+    display: inline-block;
+}
+footer .inline-fle {
+    display: inline-flex;
+}
+footer .follow {
+    line-height: 24px;
+    display: inline-block;
+}
+footer p.text-muted, footer div.text-muted {
+    font-size: 12px;
+}
+footer #socials {
+    display: inline-block;
+}
+footer #socials img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 3px;
+    filter: opacity(0.5);
+    transition: all .4s;
+}
+footer #socials img:hover {
+    filter: opacity(1);
+}
+@media screen and (max-width: 1200px) {
+    #team div:last-child {
+        width: auto;
+    }
+    #teamTitle h1 {
+        text-align: center;
+    }
+    #teamTitle h4 {
+        right: 264px;
+        top: 34px;
+    }
+    .purchase {
+        font-size: 7rem !important;
+    }
+    .purchase2 {
+        top: 50px !important;
+    }
+    .record {
+        margin-left: 17px;
+    }
+    .enterDate {
+        font-size: 17px;
+    }
+    #file2 {
+        left: 19px;
+        top: 15px;
+    }
+    #file3 {
+        width: 214px !important;
+    }
+    .frameColor {
+        width: 274px !important;
+    }
+}
+@media screen and (max-width: 992px) {
+    #orderTitle h4 {
+        top: 324px;
+    }
+    #socialBanner h1 {
+        font-size: 109px;
+    }
+    #socialBanner h4 {
+        top: 655px;
+    }
+    #socialVideo {
+        margin-top: 94px;
+    }
+    #socialVideo video {
+        margin: auto;
+    }
+    #socialVideo .icons {
+        text-align: center;
+    }
+    #socialVideo .icons a {
+        display: inline;
+    }
+    #socialVideo .circle2 {
+        right: 343px;
+    }
+    #socialVideo .circle22 {
+        right: 387px;
+    }
+    #socialVideo .square {
+        left: -541px;
+    }
+    #socialVideo .wire {
+        left: -522px;
+    }
+    .zirCarousel {
+        background: white;
+    }
+    .purchase {
+        font-size: 5rem !important;
+    }
+    .purchase2 {
+        top: 27px !important;
+        right: 39% !important;
+    }
+    #orderTitle h1 {
+        font-size: 106px;
+    }
+    #orderTitle h4 {
+        top: 306px;
+    }
+    #AddOrderForm table {
+        margin-right: 121px;
+        margin-top: 49px;
+    }
+    #file2 {
+        left: 40px;
+        top: 3px;
+    }
+    #file3 {
+        width: 265px !important;
+    }
+    .frameColor {
+        width: 342px !important;
+    }
+    footer > div {
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-top: 29px;
+    }
+    footer .inline-fle {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    #orderTitle h1 {
+        font-size: 90px;
+    }
+    #orderTitle h4 {
+        top: 296px;
+    }
+    #socialVideo .square {
+        left: -457px;
+    }
+    #socialVideo .wire {
+        left: -443px;
+    }
+    #socialVideo .circle2 {
+        right: 266px;
+    }
+    #socialVideo .circle22 {
+        right: 308px;
+    }
+    #socialBanner h1 {
+        font-size: 90px;
+    }
+    #teamTitle h1 {
+        text-align: left;
+    }
+    #socialBanner h4 {
+        top: 592px;
+        right: 273px;
+    }
+    #team {
+        margin: auto;
+    }
+    .persons {
+        width: 36%;
+    }
+    #carousel {
+        width: 53%;
+    }
+    .owl-carousel .owl-item img {
+        width: 112%;
+        margin: auto;
+    }
+    #orderTitle h1 {
+        font-size: 78px;
+    }
+    #orderTitle h4 {
+        top: 288px;
+    }
+    #AddOrderForm table {
+        margin-right: 25px;
+        margin-top: 49px;
+    }
+    #file2 {
+        left: 23px;
+        top: 15px;
+    }
+    #file3 {
+        width: 287px !important;
+    }
+    .frameColor {
+        width: 371px !important;
+    }
+}
+@media screen and (max-width: 576px) {
+    #orderTitle h1 {
+        font-size: 90px;
+    }
+    #orderTitle h4 {
+        top: 296px;
+    }
+    #socialBanner h1 {
+        font-size: 61px;
+    }
+    #socialBanner h4 {
+        top: 574px;
+        right: 162px;
+        font-size: 19px;
+    }
+    #socialVideo .wire {
+        left: -412px;
+    }
+    #socialVideo .square {
+        left: -430px;
+    }
+    #teamTitle h1 {
+        font-size: 50px;
+    }
+    #teamTitle h4 {
+        right: 189px;
+        top: 22px;
+        font-size: 19px;
+    }
+    #carousel {
+        width: 53%;
+    }
+    .owl-carousel .owl-item img {
+        width: 112%;
+        margin: auto;
+    }
+    .purchase {
+        font-size: 3rem !important;
+    }
+    .purchase2 {
+        top: 15px !important;
+        right: 38% !important;
+        font-size: 20px !important;
+    }
+    #orderTitle h1 {
+        font-size: 56px;
+    }
+    #orderTitle h4 {
+        top: 272px;
+    }
+    #AddOrderForm label {
+        font-size: 11px;
+    }
+    #file2 {
+        left: 27px;
+        top: 2px;
+    }
+    .frameColor {
+        width: 257px !important;
+    }
+    #file3 {
+        width: 200px !important;
+    }
+    .uploadText {
+       font-size: 13px;
+    }
+    .faq {
+       font-size: 55px!important;
+    }
+    .faqPersian {
+       font-size: 12px!important;
+        top: 23px!important;
+    }
+}

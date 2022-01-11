@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>سفارش محصول هیت فریم</title>
+</head>
+<style>
+    label {
+        font-size: 13px;
+    }
+</style>
+<body>
+<header id="mobileHeader" class="d-block d-lg-none p-5">
+    <div class="container-fluid d-flex justify-content-between">
+        <img src="images/logo.PNG">
+        <img src="images/icons8-menu-50.png" id="hambergerIcon">
+    </div>
+    <ul class="list-unstyled pr-3 m-0 position-fixed text-right text-white" id="mobileMenu">
+        <li class="m-2">
+            <a href="index.html">صفحه اصلی</a>
+        </li>
+        <li class="m-2">
+            <a href="hitFrame.html">محصولات ما</a>
+        </li>
+        <li class="m-2">
+            <a href="questions.html">سوالات متداول</a>
+        </li>
+        <li class="m-2">
+            <a href="about%20us.html">درباره ما</a>
+        </li>
+        <li class="m-2">
+            <a href="contact.html">تماس با ما</a>
+        </li>
+        <div class="col mt-5">
+            <a>
+                <img src="images/basket.PNG" class="rounded">
+            </a>
+            <a>
+                <img src="images/user.PNG" class="rounded">
+            </a>
+        </div>
+    </ul>
+</header>
+<header id="deskHeader" class="d-none d-lg-block">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-unstyled p-0 m-0 d-flex justify-content-around">
+                    <li class="list-inline-item m-2">
+                        <a href="index.html">صفحه اصلی</a>
+                    </li>
+                    <li class="list-inline-item m-2">
+                        <a href="hitFrame.html">محصولات ما</a>
+                    </li>
+                    <li class="list-inline-item m-2">
+                        <a href="questions.html">سوالات متداول</a>
+                    </li>
+                    <li class="list-inline-item m-2">
+                        <a href="about%20us.html">درباره ما</a>
+                    </li>
+                    <li class="list-inline-item m-2">
+                        <a href="contact.html">تماس با ما</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <a>
+                    <img src="images/basket.PNG" class="rounded">
+                </a>
+                <a>
+                    <img src="images/user.PNG" class="rounded border-dark border-left pl-4">
+                </a>
+                <a>
+                    <img src="images/logo.PNG" class="mr-2 rounded">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="orderTitle" class="container text-center mt-5">
+    <h1 class="">HitFrame</h1>
+    <h4 class="font-weight-bold">سفارش محصول هیت فریم</h4>
+</section>
+
+<section id="AddOrderForm" class="container mt-5 p-4">
+    <div class="row">
+        <div class="col-12 col-lg-6 text-right order-2 order-lg-1">
+
+            <div>
+                <form>
+                    <table style="margin-top: 38px">
+                        <tr>
+                            <td style="width: 200px">
+                                <label class="font-weight-bold" style="padding-bottom: 58px">رنگ قاب مورد نظر
+                                    شما؟</label>
+                            </td>
+                            <td class="pr-3" style="width: 398px">
+                                <div class="d-flex">
+                                    <div id="select3" class="select cursor w-100 px-2 d-flex justify-content-between rounded text-muted border border-dark position-relative">
+                                        <p class="placeholder text-muted">رنگ قاب مورد نظر شما</p>
+                                        <img id="arrow3" src="images/icons8-expand-arrow-24.png" class="arrowImg">
+                                        <ul id="list3" class="position-absolute list-unstyled frameColorMenu">
+                                            <li>قرمز</li>
+                                            <li>آبی</li>
+                                            <li>زرد</li>
+                                            <li>سبز</li>
+                                            <li>بنفش</li>
+                                        </ul>
+                                    </div>
+                                    <span class="text-danger h2">*</span><br>
+                                </div>
+
+                                <div class="d-flex justify-content-start mt-1">
+                                    <p class="text-muted zirNevis">؟ تنها رنگ های موجود قابل سفارش هستند.</p>
+                                    <span class="infoIcon">؟</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px">
+                                <label class="font-weight-bold" style="padding-bottom: 58px">رنگ پس زمینه را انتخاب
+                                    کنید:</label>
+                            </td>
+                            <td class="pr-3 position-relative" style="width: 398px">
+                                <input type="color" class="frameColor position-absolute">
+                                <div class="cursor px-2 d-flex justify-content-between rounded text-muted border border-dark"
+                                     style="width: 96%">
+                                    <p class="placeholder text-muted">رنگ مورد نظر شما</p>
+                                    <img src="images/colors.PNG" class="color">
+                                </div>
+                                <div class="d-flex justify-content-start mt-1">
+                                    <p class="text-muted zirNevis">؟ می توانید متن آهنگ را در اینجا برای ما بنویسید.</p>
+                                    <span class="infoIcon">؟</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px">
+                                <label class="font-weight-bold" style="padding-bottom: 58px">آیا دیسک وسط قاب را می
+                                    خواهید؟</label>
+                            </td>
+                            <td class="pr-3" style="width: 398px">
+                                <div class="d-flex">
+                                    <div id="select4" class="select position-relative cursor w-100 px-2 d-flex justify-content-between rounded text-muted border border-dark">
+                                        <p class="placeholder text-muted">دیسک در وسط قاب</p>
+                                        <img id="arrow4" src="images/icons8-expand-arrow-24.png" class="arrowImg">
+                                        <ul id="list4" class="position-absolute list-unstyled frameColorMenu">
+                                            <li>بله</li>
+                                            <li>خیر</li>
+                                        </ul>
+                                    </div>
+                                    <span class="text-danger h2">*</span><br>
+                                </div>
+                                <div class="d-flex justify-content-start mt-1">
+                                    <span class="infoIcon">؟</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px">
+
+                            </td>
+                            <td class="pr-3" style="width: 398px">
+                                <div class="d-flex">
+                                    <div id="select5" class="select position-relative cursor w-75 px-2 d-flex justify-content-between rounded text-muted border border-dark">
+                                        <p class="placeholder text-muted">رنگ دیسک شما</p>
+                                        <img id="arrow5" src="images/icons8-expand-arrow-24.png" class="arrowImg">
+                                        <ul id="list5" class="position-absolute list-unstyled frameColorMenu">
+                                            <li>قرمز</li>
+                                            <li>آبی</li>
+                                            <li>زرد</li>
+                                            <li>سبز</li>
+                                            <li>بنفش</li>
+                                        </ul>
+                                    </div>
+                                    <span class="infoIcon mr-2 mt-3">؟</span>
+                                </div>
+
+                                <p class="text-muted zirNevis">؟ رنگ مورد نظر خودتون را انتخاب کنید.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px">
+
+                            </td>
+                            <td class="pr-3" style="width: 398px">
+                                <div class="d-flex">
+                                    <div class="cursor position-relative w-75 px-2 d-flex justify-content-between rounded text-muted border border-dark">
+                                        <input type="file" id="file3" class="position-absolute">
+                                        <p class="placeholder uploadText">آپلود عکس وسط دیسک شما</p>
+                                        <img src="images/icons8-picture-50.png" class="arrowImg">
+                                    </div>
+                                    <div class="d-flex justify-content-start mt-1">
+                                        <span class="infoIcon mr-2 mt-2">؟</span>
+                                    </div>
+                                </div>
+                                <p class="text-left" style="margin-left: 84px">Max Upload: 10MG</p>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <div class="frame d-block m-auto text-center shadow-lg">
+                <div class="circle"></div>
+                <p class="font-weight-bold mt-5">نام آهنگ</p>
+                <p class="h6 mt-4">متن به دلخواه شما</p>
+                <p class="h6">تاریخ مورد نظر</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<footer class="container pb-5">
+    <div class="inline-fle">
+        <p class="text-muted follow">ما را در سوشال مدیا دنبال کنید:</p>
+        <div id="socials" class="mr-4">
+            <a>
+                <img src="images/icons8-facebook-50.png">
+            </a>
+            <a>
+                <img src="images/icons8-linkedin-50.png">
+            </a>
+            <a>
+                <img src="images/icons8-twitter-squared-50.png">
+            </a>
+            <a>
+                <img src="images/icons8-telegram-app-50.png">
+            </a>
+        </div>
+    </div>
+    <div>
+        <img src="images/footerLogo.PNG" style="display: block;margin: auto">
+    </div>
+    <div class="text-muted">
+        <p>
+            ©2022 HITHANG.IR
+        </p>
+        <hr>
+        <p>
+            A SATURN TEAM SPECIALIZED AND PROFESSIONAL WEB DESIGN & DEVELOPMENT CO
+        </p>
+    </div>
+</footer>
+<script>
+    let select3=document.getElementById('select3');
+    let select4=document.getElementById('select4');
+    let select5=document.getElementById('select5');
+
+    let list3=document.getElementById('list3');
+    let list4=document.getElementById('list4');
+    let list5=document.getElementById('list5');
+
+    let arrow3=document.getElementById('arrow3');
+    let arrow4=document.getElementById('arrow4');
+    let arrow5=document.getElementById('arrow5');
+
+    select3.addEventListener('click',function () {
+        list3.classList.toggle('open');
+        arrow3.classList.toggle('active');
+    })
+    select4.addEventListener('click',function () {
+        list4.classList.toggle('open');
+        arrow4.classList.toggle('active');
+    })
+    select5.addEventListener('click',function () {
+        list5.classList.toggle('open');
+        arrow5.classList.toggle('active');
+    })
+</script>
+<script src="js/script.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

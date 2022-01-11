@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>سفارش محصول هیت فریم</title>
+</head>
+<body>
+<header id="mobileHeader" class="d-block d-lg-none p-5">
+    <div class="container-fluid d-flex justify-content-between">
+        <img src="images/logo.PNG">
+        <img src="images/icons8-menu-50.png" id="hambergerIcon">
+    </div>
+    <ul class="list-unstyled pr-3 m-0 position-fixed text-right text-white" id="mobileMenu">
+        <li class="m-2">
+            <a href="index.html">صفحه اصلی</a>
+        </li>
+        <li class="m-2">
+            <a href="hitFrame.html">محصولات ما</a>
+        </li>
+        <li class="m-2">
+            <a href="questions.html">سوالات متداول</a>
+        </li>
+        <li class="m-2">
+            <a href="about%20us.html">درباره ما</a>
+        </li>
+        <li class="m-2">
+            <a href="contact.html">تماس با ما</a>
+        </li>
+        <div class="col mt-5">
+            <a>
+                <img src="images/basket.PNG" class="rounded">
+            </a>
+            <a>
+                <img src="images/user.PNG" class="rounded">
+            </a>
+        </div>
+    </ul>
+</header>
+<header id="deskHeader" class="d-none d-lg-block">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-unstyled p-0 m-0 d-flex justify-content-around">
+                    <li class="list-inline-item m-2">
+                        <a href="index.html">صفحه اصلی</a>
+                    </li>
+                    <li class="list-inline-item m-2">
+                        <a href="hitFrame.html">محصولات ما</a>
+                    </li>
+                    <li class="list-inline-item m-2">
+                        <a href="questions.html">سوالات متداول</a>
+                    </li>
+                    <li class="list-inline-item m-2">
+                        <a href="about%20us.html">درباره ما</a>
+                    </li>
+                    <li class="list-inline-item m-2">
+                        <a href="contact.html">تماس با ما</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <a>
+                    <img src="images/basket.PNG" class="rounded">
+                </a>
+                <a>
+                    <img src="images/user.PNG" class="rounded border-dark border-left pl-4">
+                </a>
+                <a>
+                    <img src="images/logo.PNG" class="mr-2 rounded">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="orderTitle" class="container text-center mt-5">
+    <h1 class="">HitFrame</h1>
+    <h4 class="font-weight-bold">سفارش محصول هیت فریم</h4>
+</section>
+
+<section id="AddOrderForm" class="container mt-5 p-4">
+    <div class="row">
+        <div class="col-12 col-lg-6 text-right order-2 order-lg-1">
+
+            <div>
+                <form>
+                    <table style="margin-top: 129px">
+                        <tr>
+                            <td style="width: 200px">
+                                <label class="font-weight-bold" style="padding-bottom: 58px">عکس وسط میخواهید؟</label>
+                            </td>
+                            <td class="pr-3 position-relative" style="width: 398px">
+                                <input type="file" class="rounded text-muted border border-dark position-absolute" id="file2">
+                                <div class="d-flex">
+                                    <div class="rounded text-muted border border-dark diskImg">
+                                        <p>تصویر وسط دیسک</p>
+                                    </div>
+                                    <span class="text-danger h2">*</span><br>
+                                </div>
+                                <div class="d-flex justify-content-start mt-1">
+                                    <p class="text-muted zirNevis">؟ آهنگ خود را با هر زبانی می توانید وارد کنید.</p>
+                                    <span class="infoIcon">؟</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px">
+                                <label class="font-weight-bold" style="padding-bottom: 58px">نقاشی دیجیتال:</label>
+                            </td>
+                            <td class="pr-3" style="width: 398px">
+                                <div id="select1" class="select position-relative rounded text-muted border border-dark d-flex justify-content-between faceNumber">
+                                    <p>تعداد چهره های درون عکس شما</p>
+                                    <img id="arrow1" src="images/icons8-expand-arrow-24.png" class="arrowImg">
+                                    <ul id="list1" class="position-absolute list-unstyled frameColorMenu">
+                                        <li>2</li>
+                                        <li>4</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-start mt-1">
+                                    <p class="text-muted zirNevis">؟ هر صورت یک عدد چهره محسوب می شود.</p>
+                                    <span class="infoIcon">؟</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px">
+                                <label class="font-weight-bold" style="padding-bottom: 58px">نقاشی خطی:</label>
+                            </td>
+                            <td class="pr-3" style="width: 398px">
+                                <div class="d-flex">
+                                    <div id="select2" class="select position-relative rounded text-muted border border-dark d-flex justify-content-between faceNumber">
+                                        <p>تعداد چهره های درون عکس شما</p>
+                                        <img id="arrow2" src="images/icons8-expand-arrow-24.png" class="arrowImg">
+                                        <ul id="list2" class="position-absolute list-unstyled frameColorMenu">
+                                            <li>2</li>
+                                            <li>4</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                        </ul>
+                                    </div>
+                                    <span class="text-danger h2">*</span><br>
+                                </div>
+                                <div class="d-flex justify-content-start mt-1">
+                                    <p class="text-muted zirNevis">؟ هر صورت یک عدد چهره محسوب می شود.</p>
+                                    <span class="infoIcon">؟</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <div class="frame d-block m-auto text-center shadow-lg">
+                <div class="circle"></div>
+                <p class="font-weight-bold mt-5">نام آهنگ</p>
+                <p class="h6 mt-4">متن به دلخواه شما</p>
+                <p class="h6">تاریخ مورد نظر</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<footer class="container pb-5">
+    <div class="inline-fle">
+        <p class="text-muted follow">ما را در سوشال مدیا دنبال کنید:</p>
+        <div id="socials" class="mr-4">
+            <a>
+                <img src="images/icons8-facebook-50.png">
+            </a>
+            <a>
+                <img src="images/icons8-linkedin-50.png">
+            </a>
+            <a>
+                <img src="images/icons8-twitter-squared-50.png">
+            </a>
+            <a>
+                <img src="images/icons8-telegram-app-50.png">
+            </a>
+        </div>
+    </div>
+    <div>
+        <img src="images/footerLogo.PNG" style="display: block;margin: auto">
+    </div>
+    <div class="text-muted">
+        <p>
+            ©2022 HITHANG.IR
+        </p>
+        <hr>
+        <p>
+            A SATURN TEAM SPECIALIZED AND PROFESSIONAL WEB DESIGN & DEVELOPMENT CO
+        </p>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
